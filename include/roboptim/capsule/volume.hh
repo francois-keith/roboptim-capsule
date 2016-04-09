@@ -26,6 +26,7 @@
 
 # include <roboptim/core/differentiable-function.hh>
 
+# include "roboptim/capsule/config.hh"
 # include "roboptim/capsule/types.hh"
 
 namespace roboptim
@@ -36,7 +37,7 @@ namespace roboptim
     ///
     /// This class computes the volume of a capsule defined by a
     /// segment and a radius.
-    class Volume
+    class ROBOPTIM_CAPSULE_DLLAPI Volume
       : public roboptim::DifferentiableFunction
     {
     public:

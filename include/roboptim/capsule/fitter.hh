@@ -28,6 +28,7 @@
 
 # include <roboptim/core/solver-factory.hh>
 
+# include <roboptim/capsule/config.hh>
 # include <roboptim/capsule/types.hh>
 # include <roboptim/capsule/volume.hh>
 # include <roboptim/capsule/distance-capsule-point.hh>
@@ -40,7 +41,7 @@ namespace roboptim
     ///
     /// This class computes the best fitting capsule over a
     /// polyhedron.
-    class Fitter
+    class ROBOPTIM_CAPSULE_DLLAPI Fitter
     {
     public:
       /// \brief Constructor.

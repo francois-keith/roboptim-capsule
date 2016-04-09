@@ -26,6 +26,7 @@
 
 # include <roboptim/core/differentiable-function.hh>
 
+# include <roboptim/capsule/config.hh>
 # include <roboptim/capsule/types.hh>
 
 namespace roboptim
@@ -33,7 +34,7 @@ namespace roboptim
   namespace capsule
   {
     /// \brief Distance to point RobOptim function.
-    class DistanceCapsulePoint
+    class ROBOPTIM_CAPSULE_DLLAPI DistanceCapsulePoint
       : public roboptim::DifferentiableFunction
     {
     public:
