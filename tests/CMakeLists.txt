@@ -4,6 +4,9 @@ INCLUDE_DIRECTORIES(${Boost_INCLUDE_DIRS})
 # Make Boost.Test generates the main function in test cases.
 ADD_DEFINITIONS(-DBOOST_TEST_DYN_LINK -DBOOST_TEST_MAIN)
 
+# Include shared test suite.
+INCLUDE(shared-tests/tests.cmake)
+
 # ADD_TESTCASE(NAME)
 # ------------------------
 #
@@ -29,6 +32,8 @@ MACRO(ADD_TESTCASE NAME)
   TARGET_LINK_LIBRARIES(${NAME}
     ${Boost_LIBRARIES}
     ${PROJECT_NAME})
+
+  SET_TEST_PROPERTIES(${NAME})
 ENDMACRO(ADD_TESTCASE)
 
 # Generated test.
